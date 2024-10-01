@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profile Card - LZC.app</title>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width" name="viewport"/>
+    <link href="styles.css?t=1727717206" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://static.seeleo.com/fontawesome/css/all.min.css">
+    <!--
+      - favicon
+    -->
+    <link href="./images/icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="./images/icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="./images/icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="./images/icons/site.webmanifest" rel="manifest">
+    <link color="#5bbad5" href="./images/icons/safari-pinned-tab.svg" rel="mask-icon">
+    <link href="./images/icons/favicon.ico" rel="shortcut icon">
+    <meta content="LZC.app" name="apple-mobile-web-app-title">
+    <meta content="LZC.app" name="application-name">
+    <meta content="#da532c" name="msapplication-TileColor">
+    <meta content="./images/icons/mstile-144x144.png" name="msapplication-TileImage">
+    <meta content="./images/icons/browserconfig.xml" name="msapplication-config">
+    <meta content="#ffffff" name="theme-color">
+</head>
+<body>
+<div class="card" data-state="#about">
+    <div class="card-header">
+        <div class="card-cover"
+             style="background-image: url('./images/back.jpg')"></div>
+        <img alt="avatar"
+             class="card-avatar"
+             src="./images/avatar.png"/>
+        <h1 class="card-fullname">Laurence L.</h1>
+        <h2 class="card-jobtitle">@RainySummer<span class="space"></span>@Seeleo</h2>
+    </div>
+    <div class="card-main">
+        <div class="card-section is-active" id="about">
+            <div class="card-content">
+                <div class="card-subtitle">ABOUT</div>
+                <p class="card-desc">
+                    Computer Science, Web, Programming... Domain enthusiast
+                </p>
+            </div>
+            <div class="card-social">
+                <a href="https://seeleo.com/" target="_blank">
+                    <i class="fa-solid fa-house-heart"></i>
+                </a>
+                <a href="weixin://" target="_blank" id="wechat" onclick="function copyToClipboardAndOpenLink(event) {
+                    event.preventDefault();
+                    navigator.clipboard.writeText('13682247986').then(function() {
+                        window.open(event.currentTarget.href, '_blank');
+                    }).catch(function(err) {
+                        console.error('Could not copy text: ', err);
+                    });
+                }
+                copyToClipboardAndOpenLink(event);">
+                    <i class="fa-brands fa-weixin"></i>
+                </a>
+                <a href="https://github.com/lzcapp" target="_blank">
+                    <i class="fa-brands fa-github-alt"></i>
+                </a>
+                <a href="https://steamcommunity.com/id/lzcapp" target="_blank">
+                    <i class="fa-brands fa-steam"></i>
+                </a>
+            </div>
+            <div class="card-content">
+                <div class="card-subtitle">CONTACT</div>
+                <div class="card-contact-wrapper">
+                    <div class="card-contact">
+                        <i class="fa-light fa-envelope"></i>
+                        <a class="contact-link" href="mailto:hi@lzc.app" target="_blank">hi@lzc.app</a>
+                    </div>
+                    <div class="card-contact">
+                        <i class="fa-light fa-phone"></i>
+                        <a class="contact-link" href="tel:13682247986" target="_blank">136<span class="space"></span>8224<span class="space"></span>7986</a>
+                    </div>
+                    <div class="card-contact">
+                        <i class="fa-sharp fa-light fa-key"></i>
+                        <a href="https://keyserver.ubuntu.com/pks/lookup?search=F617079276DFBFBD&amp;fingerprint=on&amp;op=index" target="_blank">F617<span class="space"></span>0792<span class="space"></span>76DF<span class="space"></span>BFBD</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
